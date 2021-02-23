@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/paschdan/pr-conventions-action/compare/v1.2.0...v1.3.0) (2021-02-23)
+
+
+### Features
+
+* use the pushed docker package in the action ([#23](https://github.com/paschdan/pr-conventions-action/issues/23)) ([f057568](https://github.com/paschdan/pr-conventions-action/commit/f0575683753236f1596e8e66b04a7528db246bc1))
+
 # [1.2.0](https://github.com/paschdan/pr-conventions-action/compare/v1.1.0...v1.2.0) (2021-02-23)
 
 
