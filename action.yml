@@ -17,5 +17,5 @@ inputs:
     required: false
     description: 'should commitlint be verbose during linting, that means, if valid commits should also be reported'
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: docker
+  image: ghcr.io/paschdan/pr-conventions-action:v1
