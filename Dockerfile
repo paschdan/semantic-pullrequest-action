@@ -16,8 +16,7 @@ FROM node:12-alpine3.9
 
 COPY package*.json /
 
-RUN npm ci --production
-
+COPY --from=build node_modules node_modules
 COPY --from=build lib lib
 
 COPY run.js run.js
