@@ -1,11 +1,21 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'PR Conventions Action'
+description: 'Checks a PR that it has valid commits and title'
+author: 'paschdan'
 inputs:
-  milliseconds: # change this
-    required: true
-    description: 'input description here'
-    default: 'default value if applicable'
+  token: # change this
+    required: false
+    description: 'Personal access token (PAT) used to interact with the GitHub API.'
+    default: '${{ github.token }}'
+  help_url:
+    required: false
+    description: 'Help Url that is shown when validation does not pass'
+    default: 'https://www.conventionalcommits.org/en/v1.0.0/'
+  config_file:
+    required: false
+    description: 'file to use for commitlinting'
+  verbose:
+    required: false
+    description: 'should commitlint be verbose during linting, that means, if valid commits should also be reported'
 runs:
-  using: 'node12'
-  main: 'dist/index.js'
+  using: 'docker'
+  image: 'Dockerfile'

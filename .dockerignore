@@ -1,0 +1,11 @@
+node_modules
+action.yml
+.github
+__tests__
+.eslintrc.json
+.eslintignore
+.prettierignore
+.prettierrc.json
+CODEOWNERS
+jest.config.js
+LICENSE
