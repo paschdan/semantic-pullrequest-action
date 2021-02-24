@@ -1,0 +1,21 @@
+# 1.0.0 (2021-02-24)
+
+
+### Bug Fixes
+
+* fix automerge github token ([#16](https://github.com/paschdan/semantic-pullrequest-action/issues/16)) ([01a0037](https://github.com/paschdan/semantic-pullrequest-action/commit/01a0037a6bda30cdef46eb60948fdd882a99190a))
+* use a real token for automerge ([#18](https://github.com/paschdan/semantic-pullrequest-action/issues/18)) ([29366de](https://github.com/paschdan/semantic-pullrequest-action/commit/29366de1710af9233a9d7fbfa60c8b2a56077469))
+* use correct dependabot config ([c0fe217](https://github.com/paschdan/semantic-pullrequest-action/commit/c0fe2170367830dc014716be810a513f1a5267e1))
+
+
+### Features
+
+* add automerge workflow ([#12](https://github.com/paschdan/semantic-pullrequest-action/issues/12)) ([e885621](https://github.com/paschdan/semantic-pullrequest-action/commit/e885621230458cd89a83ebfaaf00a49802981623))
+* add automerge workflow for dependabot ([#13](https://github.com/paschdan/semantic-pullrequest-action/issues/13)) ([1034e0c](https://github.com/paschdan/semantic-pullrequest-action/commit/1034e0c1453f97f3dcc7d8075875b980a172762b))
+* add changelog and git plugins to semantic release ([3f5ece9](https://github.com/paschdan/semantic-pullrequest-action/commit/3f5ece93eff44f5b646bb44ecf5af1028759a1c5))
+* add docker build and push to release workflow ([#22](https://github.com/paschdan/semantic-pullrequest-action/issues/22)) ([1fbb5f9](https://github.com/paschdan/semantic-pullrequest-action/commit/1fbb5f9091d9def10c85573b80561c212ab74423))
+* add initial semantic release ([#21](https://github.com/paschdan/semantic-pullrequest-action/issues/21)) ([b224ec6](https://github.com/paschdan/semantic-pullrequest-action/commit/b224ec62fbc0871a1170dfe3d9528c677fd62eb4))
+* add initial version of pr-conventions-action ([#10](https://github.com/paschdan/semantic-pullrequest-action/issues/10)) ([67545e6](https://github.com/paschdan/semantic-pullrequest-action/commit/67545e69ceaaed92ebe3ef66d2a5698a97dbfa93))
+* disable body-max-line-length for dependency commits ([#17](https://github.com/paschdan/semantic-pullrequest-action/issues/17)) ([1174c62](https://github.com/paschdan/semantic-pullrequest-action/commit/1174c6249ae7e4d57db012e2eaa1f6f01a877169))
+* rename action to `semantic-pullrequest-action` ([c0d39b4](https://github.com/paschdan/semantic-pullrequest-action/commit/c0d39b4a57abea66c0298f1cd39b91f490a1a08e))
+* use the pushed docker package in the action ([#23](https://github.com/paschdan/semantic-pullrequest-action/issues/23)) ([f057568](https://github.com/paschdan/semantic-pullrequest-action/commit/f0575683753236f1596e8e66b04a7528db246bc1))
