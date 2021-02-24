@@ -31,11 +31,13 @@ async function loadConfig(): Promise<QualifiedConfig> {
   // @ts-ignore
   const workspacePath: string = process.env.GITHUB_WORKSPACE
 
-  const configPath = resolve(workspacePath, core.getInput('config_file'))
+  const configFile = core.getInput('config_file', {required: false})
+  const configPath = resolve(workspacePath, configFile)
 
-  const config = existsSync(configPath)
-    ? await load({}, {file: configPath})
-    : await load({extends: ['@commitlint/config-conventional']})
+  const config =
+    configFile && existsSync(configPath)
+      ? await load({}, {file: configPath})
+      : await load({extends: ['@commitlint/config-conventional']})
 
   return config
 }
