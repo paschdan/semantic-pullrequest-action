@@ -52,3 +52,7 @@ The commitlint config file to use for linting
 ### `verbose` (optional)
 
 Should commitlint output also valid commits
+
+### `create_comment` (optional)
+
+if set to anything the action will comment on the pr with the results

@@ -16,6 +16,9 @@ inputs:
   verbose:
     required: false
     description: 'should commitlint be verbose during linting, that means, if valid commits should also be reported'
+  create_comment:
+    required: false
+    description: 'should the action comment on the pr'
 runs:
   using: docker
   image: ghcr.io/paschdan/semantic-pullrequest-action:v1

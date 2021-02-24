@@ -36,5 +36,6 @@ jobs:
         - uses: ./
           with:
             config_file: 'commitlint.config.js'
+            create_comment: 'true'
           env:
             NODE_PATH: ${{ github.workspace }}/node_modules
