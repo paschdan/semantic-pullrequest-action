@@ -1,8 +1,8 @@
 <p align="center">
-  <a href="https://github.com/paschdan/pr-conventions-action/actions"><img alt="typescript-action status" src="https://github.com/paschdan/pr-conventions-action/workflows/build-test/badge.svg"></a>
+  <a href="https://github.com/paschdan/semantic-pullrequest-action/actions"><img alt="typescript-action status" src="https://github.com/paschdan/semantic-pullrequest-action/workflows/build-test/badge.svg"></a>
 </p>
 
-# pr-conventions-action
+# semantic pullrequest action
 
 This github actions checks if a pull request has valid commits by using commitlint
 
@@ -26,7 +26,7 @@ jobs:
   main:
     runs-on: ubuntu-latest
     steps:
-      - uses: paschdan/pr-conventions-action@v1
+      - uses: paschdan/semantic-pullrequest-action@v1
 ```
 
 ## inputs

@@ -1,8 +1,8 @@
 {
-  "name": "typescript-action",
+  "name": "semantic-pullrequest-action",
   "version": "1.3.0",
   "private": true,
-  "description": "TypeScript template action",
+  "description": "this action checks the commits and the title of a pr via commitlint",
   "main": "lib/main.js",
   "scripts": {
     "build": "tsc",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/paschdan/pr-conventions-action"
+    "url": "https://github.com/paschdan/semantic-pullrequest-action"
   },
   "keywords": [
     "actions",
