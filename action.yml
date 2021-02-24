@@ -21,4 +21,4 @@ inputs:
     description: 'should the action comment on the pr'
 runs:
   using: docker
-  image: ghcr.io/paschdan/semantic-pullrequest-action:v1
+  image: docker://ghcr.io/paschdan/semantic-pullrequest-action:v1
