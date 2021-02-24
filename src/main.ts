@@ -74,12 +74,14 @@ ${commitOutput}
     }
 
     if (output) {
-      octoKit.issues.createComment({
-        owner,
-        repo,
-        issue_number: pull_number,
-        body: output
-      })
+      if (core.getInput('create_comment')) {
+        octoKit.issues.createComment({
+          owner,
+          repo,
+          issue_number: pull_number,
+          body: output
+        })
+      }
 
       throw new Error(output)
     }

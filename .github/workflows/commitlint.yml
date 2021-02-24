@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: sed -i -E "s/(ghcr.io.+)/Dockerfile/" ./action.yml
+      - run: sed -i -E "s/(docker:.*)/Dockerfile/" ./action.yml
       - uses: ./
         with:
           config_file: 'commitlint.config.js'
@@ -36,5 +36,6 @@ jobs:
         - uses: ./
           with:
             config_file: 'commitlint.config.js'
+            create_comment: 'true'
           env:
             NODE_PATH: ${{ github.workspace }}/node_modules
