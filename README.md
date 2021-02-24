@@ -8,7 +8,7 @@ This github actions checks if a pull request has valid commits by using commitli
 
 * it will check the title of the PR
 * it will check all commits of the PR
-* it will comment on the PR if invalid messages are found.
+* it will comment on the PR if invalid messages are found. (optional)
 
 ## usage
 
