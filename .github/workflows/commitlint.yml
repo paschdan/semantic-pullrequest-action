@@ -8,34 +8,15 @@ on:
       - synchronize
 
 jobs:
-  commitlint: # make sure the action works on a clean machine without building
+  commitlint-via-docker:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: sed -i -E "s/(docker:.*)/Dockerfile/" ./action.yml
-      - uses: ./
+      - uses: docker://alpine
         with:
-          config_file: 'commitlint.config.js'
+          args: env
+      - uses: docker://ghcr.io/paschdan/semantic-pullrequest-action:v1
+        with:
+          create_comment: 'true'
+          token: ${{ secrets.GH_TOKEN }}
 
-  commitlint-pulling-from-docker-hub:
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v2
-        - uses: actions/setup-node@v2
-          with:
-            node-version: '14'
-        - uses: actions/cache@v2
-          with:
-            path: |
-              ~/.npm
-              **/node_modules
-            key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-            restore-keys: |
-              ${{ runner.os }}-node-
-        - run: npm ci
-        - uses: ./
-          with:
-            config_file: 'commitlint.config.js'
-            create_comment: 'true'
-          env:
-            NODE_PATH: ${{ github.workspace }}/node_modules
