@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/paschdan/semantic-pullrequest-action/compare/v1.1.0...v1.1.1) (2021-02-24)
+
+
+### Bug Fixes
+
+* do mot try to load a commitlint config when none is given ([07eb641](https://github.com/paschdan/semantic-pullrequest-action/commit/07eb641016d2e8880ae5914a889e308d5d983f46))
+
 # [1.1.0](https://github.com/paschdan/semantic-pullrequest-action/compare/v1.0.0...v1.1.0) (2021-02-24)
 
 

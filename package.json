@@ -1,6 +1,6 @@
 {
   "name": "semantic-pullrequest-action",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "private": true,
   "description": "this action checks the commits and the title of a pr via commitlint",
   "main": "lib/main.js",
