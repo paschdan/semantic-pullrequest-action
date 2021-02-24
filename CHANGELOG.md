@@ -1,3 +1,16 @@
+# [1.1.0](https://github.com/paschdan/semantic-pullrequest-action/compare/v1.0.0...v1.1.0) (2021-02-24)
+
+
+### Bug Fixes
+
+* be explicit for image attribute ([e436187](https://github.com/paschdan/semantic-pullrequest-action/commit/e43618794b712ce220ffa0fb93248a2c6aea7918))
+* fix sed ([ca4a689](https://github.com/paschdan/semantic-pullrequest-action/commit/ca4a689ff703682907f9c8071cdef853525f21c9))
+
+
+### Features
+
+* make commenting optional ([c92714a](https://github.com/paschdan/semantic-pullrequest-action/commit/c92714acf3a36e3933974518f63b3959e3094ac3))
+
 # 1.0.0 (2021-02-24)
 
 
