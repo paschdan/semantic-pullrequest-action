@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/paschdan/semantic-pullrequest-action/compare/v1.1.2...v1.1.3) (2021-03-18)
+
+
+### Bug Fixes
+
+* repair dependebot auto merge ([#30](https://github.com/paschdan/semantic-pullrequest-action/issues/30)) ([435dd35](https://github.com/paschdan/semantic-pullrequest-action/commit/435dd3517ce6519f78f6f510ed2370c39a960fc2))
+
 ## [1.1.2](https://github.com/paschdan/semantic-pullrequest-action/compare/v1.1.1...v1.1.2) (2021-03-18)
 
 
