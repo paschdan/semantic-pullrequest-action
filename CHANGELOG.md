@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/paschdan/semantic-pullrequest-action/compare/v1.1.3...v1.2.0) (2021-03-18)
+
+
+### Features
+
+* auto-merge minor versions ([#31](https://github.com/paschdan/semantic-pullrequest-action/issues/31)) ([16b4138](https://github.com/paschdan/semantic-pullrequest-action/commit/16b41389da3e3327c99c25ac880e9b3e6ab7b197))
+
 ## [1.1.3](https://github.com/paschdan/semantic-pullrequest-action/compare/v1.1.2...v1.1.3) (2021-03-18)
 
 
