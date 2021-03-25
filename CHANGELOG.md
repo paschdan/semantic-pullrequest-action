@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/paschdan/semantic-pullrequest-action/compare/v1.2.0...v1.2.1) (2021-03-25)
+
+
+### Bug Fixes
+
+* remove unneded octokit options ([fc6f885](https://github.com/paschdan/semantic-pullrequest-action/commit/fc6f88525e17515e607624d05ae2386a04d4e010))
+
 # [1.2.0](https://github.com/paschdan/semantic-pullrequest-action/compare/v1.1.3...v1.2.0) (2021-03-18)
 
 
