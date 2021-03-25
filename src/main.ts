@@ -19,9 +19,8 @@ export async function run(): Promise<void> {
     const pr = getPullRequestObject()
 
     const token = core.getInput('token')
-    const api_url = process.env.GITHUB_API_URL
 
-    const octoKit = github.getOctokit(token, {baseUrl: api_url})
+    const octoKit = github.getOctokit(token)
 
     const owner = github.context.repo.owner
     const repo = github.context.repo.repo
