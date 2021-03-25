@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/paschdan/semantic-pullrequest-action/compare/v1.2.1...v1.3.0) (2021-03-25)
+
+
+### Features
+
+* introduce major version tag ([d5bfd8e](https://github.com/paschdan/semantic-pullrequest-action/commit/d5bfd8e316cdea8b88a75c9073b444234bf3290c))
+
 ## [1.2.1](https://github.com/paschdan/semantic-pullrequest-action/compare/v1.2.0...v1.2.1) (2021-03-25)
 
 
