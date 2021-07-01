@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/paschdan/semantic-pullrequest-action/compare/v1.4.0...v1.4.1) (2021-07-01)
+
+
+### Bug Fixes
+
+* force push major tag on release ([#114](https://github.com/paschdan/semantic-pullrequest-action/issues/114)) ([b79bce5](https://github.com/paschdan/semantic-pullrequest-action/commit/b79bce5e44debbc1624b64cf9d4e8edb0097a1a7))
+
 # [1.4.0](https://github.com/paschdan/semantic-pullrequest-action/compare/v1.3.1...v1.4.0) (2021-07-01)
 
 
