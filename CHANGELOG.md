@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/paschdan/semantic-pullrequest-action/compare/v1.3.1...v1.4.0) (2021-07-01)
+
+
+### Features
+
+* create a release ([#113](https://github.com/paschdan/semantic-pullrequest-action/issues/113)) ([053ae17](https://github.com/paschdan/semantic-pullrequest-action/commit/053ae177cfd1a45c482363fc8b31dae7f2bcdfa3))
+
 ## [1.3.1](https://github.com/paschdan/semantic-pullrequest-action/compare/v1.3.0...v1.3.1) (2021-07-01)
 
 
