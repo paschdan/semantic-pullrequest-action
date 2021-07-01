@@ -26,7 +26,7 @@ export async function run(): Promise<void> {
     const repo = github.context.repo.repo
     const pull_number = pr.number
 
-    const livePr = await octoKit.pulls.get({
+    const livePr = await octoKit.rest.pulls.get({
       owner,
       repo,
       pull_number
@@ -51,7 +51,7 @@ ${prOutput}
 `
     }
 
-    const {data: commits} = await octoKit.pulls.listCommits({
+    const {data: commits} = await octoKit.rest.pulls.listCommits({
       owner,
       repo,
       pull_number
@@ -74,7 +74,7 @@ ${commitOutput}
 
     if (output) {
       if (core.getInput('create_comment')) {
-        octoKit.issues.createComment({
+        octoKit.rest.issues.createComment({
           owner,
           repo,
           issue_number: pull_number,
