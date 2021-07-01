@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/paschdan/semantic-pullrequest-action/compare/v1.3.0...v1.3.1) (2021-07-01)
+
+
+### Bug Fixes
+
+* repair action ([#112](https://github.com/paschdan/semantic-pullrequest-action/issues/112)) ([c6350c3](https://github.com/paschdan/semantic-pullrequest-action/commit/c6350c375a94bc9580c84eb1238cbb3954eaa3ee))
+
 # [1.3.0](https://github.com/paschdan/semantic-pullrequest-action/compare/v1.2.1...v1.3.0) (2021-03-25)
 
 
