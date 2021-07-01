@@ -15,13 +15,13 @@ This github actions checks if a pull request has valid commits by using commitli
 ```yaml
 name: "Check for semantic PR"
 
-on: 
+on:
   pull_request:
     types:
       - opened
       - edited
       - synchronize
-        
+
 jobs:
   main:
     runs-on: ubuntu-latest
@@ -55,4 +55,4 @@ Should commitlint output also valid commits
 
 ### `create_comment` (optional)
 
-if set to anything the action will comment on the pr with the results
+if set to anything the action will comment on the pr with the results.
