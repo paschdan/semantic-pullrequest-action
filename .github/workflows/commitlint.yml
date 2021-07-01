@@ -16,6 +16,7 @@ jobs:
       - uses: ./
         with:
           config_file: 'commitlint.config.js'
+          create_comment: 'true'
 
   commitlint-pulling-from-docker-hub:
       runs-on: ubuntu-latest
