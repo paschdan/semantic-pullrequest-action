@@ -32,7 +32,7 @@
     "@commitlint/load": "^12.1.4"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.23",
+    "@types/jest": "^26.0.24",
     "@types/node": "^15.14.0",
     "@typescript-eslint/parser": "^4.28.2",
     "@vercel/ncc": "^0.28.6",
