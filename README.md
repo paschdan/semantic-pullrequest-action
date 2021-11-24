@@ -6,8 +6,8 @@
 
 This github actions checks if a pull request has valid commits by using commitlint
 
-* it will check the title of the PR
-* it will check all commits of the PR
+* it can check the title of the PR
+* it can check all commits of the PR
 * it will comment on the PR if invalid messages are found. (optional)
 
 ## usage
@@ -56,3 +56,15 @@ Should commitlint output also valid commits
 ### `create_comment` (optional)
 
 if set to anything the action will comment on the pr with the results.
+
+### `check_title` (optional)
+
+if set to false, will skip checking the pr title
+
+default: true
+
+### `check_commits` (optional)
+
+if set to false, will skip checking the commits
+
+default: true

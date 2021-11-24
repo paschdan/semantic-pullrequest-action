@@ -26,21 +26,22 @@ export async function run(): Promise<void> {
     const repo = github.context.repo.repo
     const pull_number = pr.number
 
-    const livePr = await octoKit.rest.pulls.get({
-      owner,
-      repo,
-      pull_number
-    })
-
-    const prTitle = livePr.data.title
-
     let output = ''
 
-    const prMessages = [prTitle]
+    if (core.getBooleanInput('check_title')) {
+      const livePr = await octoKit.rest.pulls.get({
+        owner,
+        repo,
+        pull_number
+      })
 
-    const prOutput = await commitlint(prMessages)
-    if (prOutput) {
-      output += `
+      const prTitle = livePr.data.title
+
+      const prMessages = [prTitle]
+
+      const prOutput = await commitlint(prMessages)
+      if (prOutput) {
+        output += `
 please fix your pull request title:
 \`\`\`
 
@@ -49,19 +50,21 @@ ${prOutput}
 \`\`\`
 
 `
+      }
     }
 
-    const {data: commits} = await octoKit.rest.pulls.listCommits({
-      owner,
-      repo,
-      pull_number
-    })
+    if (core.getBooleanInput('check_commits')) {
+      const {data: commits} = await octoKit.rest.pulls.listCommits({
+        owner,
+        repo,
+        pull_number
+      })
 
-    const messages = commits.map(commitEntry => commitEntry.commit.message)
+      const messages = commits.map(commitEntry => commitEntry.commit.message)
 
-    const commitOutput = await commitlint(messages)
-    if (commitOutput) {
-      output += `
+      const commitOutput = await commitlint(messages)
+      if (commitOutput) {
+        output += `
 please fix your commits:
 \`\`\`
 
@@ -70,6 +73,7 @@ ${commitOutput}
 \`\`\`
 
 `
+      }
     }
 
     if (output) {
