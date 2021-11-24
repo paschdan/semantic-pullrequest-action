@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/paschdan/semantic-pullrequest-action/compare/v1.5.0...v1.6.0) (2021-11-24)
+
+
+### Features
+
+* make checks optional ([#216](https://github.com/paschdan/semantic-pullrequest-action/issues/216)) ([106550d](https://github.com/paschdan/semantic-pullrequest-action/commit/106550d9485f8f1b96fffcba698d2b28dcd5b95c))
+
 # [1.5.0](https://github.com/paschdan/semantic-pullrequest-action/compare/v1.4.1...v1.5.0) (2021-07-02)
 
 
