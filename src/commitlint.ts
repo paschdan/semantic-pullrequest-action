@@ -1,8 +1,3 @@
-import load from '@commitlint/load'
-import lint from '@commitlint/lint'
-import {existsSync} from 'fs'
-import {format} from '@commitlint/format'
-import {resolve} from 'path'
 import * as core from '@actions/core'
 import {
   LintOptions,
@@ -11,6 +6,13 @@ import {
   ParserPreset,
   QualifiedConfig
 } from '@commitlint/types'
+
+import {existsSync} from 'fs'
+import {format} from '@commitlint/format'
+
+import lint from '@commitlint/lint'
+import load from '@commitlint/load'
+import {resolve} from 'path'
 
 function selectParserOpts(parserPreset: ParserPreset): undefined | object {
   if (typeof parserPreset !== 'object') {

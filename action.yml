@@ -19,6 +19,14 @@ inputs:
   create_comment:
     required: false
     description: 'should the action comment on the pr'
+  check_title:
+    required: false
+    description: 'shall the title be checked?'
+    default: 'true'
+  check_commits:
+    required: false
+    description: 'shall all commits be checked?'
+    default: 'true'
 runs:
   using: docker
   image: docker://ghcr.io/paschdan/semantic-pullrequest-action:v1
