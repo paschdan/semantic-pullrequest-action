@@ -77,7 +77,7 @@ ${commitOutput}
     }
 
     if (output) {
-      if (core.getInput('create_comment')) {
+      if (core.getBooleanInput('create_comment')) {
         octoKit.rest.issues.createComment({
           owner,
           repo,
