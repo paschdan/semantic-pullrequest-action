@@ -22,4 +22,8 @@ COPY --from=build lib lib
 COPY run.js run.js
 COPY entrypoint.sh entrypoint.sh
 
+ENV INPUT_HELP_URL "https://www.conventionalcommits.org/en/v1.0.0/"
+ENV INPUT_CHECK_TITLE "true"
+ENV INPUT_CHECK_COMMITS "true"
+
 ENTRYPOINT ["/entrypoint.sh"]
