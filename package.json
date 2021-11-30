@@ -33,8 +33,8 @@
   },
   "devDependencies": {
     "@types/jest": "^27.0.3",
-    "@types/node": "^16.11.10",
-    "@typescript-eslint/parser": "^5.4.0",
+    "@types/node": "^16.11.11",
+    "@typescript-eslint/parser": "^5.5.0",
     "@vercel/ncc": "^0.32.0",
     "commitlint-plugin-function-rules": "^1.4.0",
     "eslint": "^7.32.0",
@@ -43,7 +43,7 @@
     "jest": "^27.3.1",
     "jest-circus": "^27.2.2",
     "js-yaml": "^4.1.0",
-    "prettier": "2.4.1",
+    "prettier": "2.5.0",
     "ts-jest": "^27.0.7",
     "typescript": "^4.5.2"
   },
