@@ -14,7 +14,9 @@ import lint from '@commitlint/lint'
 import load from '@commitlint/load'
 import {resolve} from 'path'
 
-function selectParserOpts(parserPreset: ParserPreset): undefined | object {
+function selectParserOpts(
+  parserPreset: ParserPreset | undefined
+): object | undefined {
   if (typeof parserPreset !== 'object') {
     return undefined
   }
