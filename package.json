@@ -38,7 +38,7 @@
     "@vercel/ncc": "^0.32.0",
     "commitlint-plugin-function-rules": "^1.5.1",
     "eslint": "^7.32.0",
-    "eslint-plugin-github": "^4.3.0",
+    "eslint-plugin-github": "^4.3.2",
     "eslint-plugin-jest": "^25.3.0",
     "jest": "^27.4.1",
     "jest-circus": "^27.4.1",
