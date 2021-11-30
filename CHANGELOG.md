@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/paschdan/semantic-pullrequest-action/compare/v1.6.0...v1.6.1) (2021-11-30)
+
+
+### Bug Fixes
+
+* add default values to dockerfile ([#222](https://github.com/paschdan/semantic-pullrequest-action/issues/222)) ([ba18ff4](https://github.com/paschdan/semantic-pullrequest-action/commit/ba18ff469de75d79b1f55d03c8bb154f9f824bd6))
+
 # [1.6.0](https://github.com/paschdan/semantic-pullrequest-action/compare/v1.5.0...v1.6.0) (2021-11-24)
 
 
