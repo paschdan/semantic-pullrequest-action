@@ -1,4 +1,4 @@
-FROM node:12-alpine3.9 as build
+FROM node:12-alpine as build
 
 RUN apk --no-cache add git
 
@@ -12,7 +12,7 @@ RUN npm install -g typescript
 
 RUN npm run build
 
-FROM node:12-alpine3.9
+FROM node:12-alpine
 
 COPY package*.json /
 
