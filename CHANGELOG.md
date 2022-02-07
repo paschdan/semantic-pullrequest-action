@@ -1,3 +1,10 @@
+## [1.6.2](https://github.com/paschdan/semantic-pullrequest-action/compare/v1.6.1...v1.6.2) (2022-02-07)
+
+
+### Bug Fixes
+
+* update base image ([#307](https://github.com/paschdan/semantic-pullrequest-action/issues/307)) ([74ee87e](https://github.com/paschdan/semantic-pullrequest-action/commit/74ee87e0d6d5010998603971f858fedc7317a245))
+
 ## [1.6.1](https://github.com/paschdan/semantic-pullrequest-action/compare/v1.6.0...v1.6.1) (2021-11-30)
 
 
