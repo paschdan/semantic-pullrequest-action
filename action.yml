@@ -19,6 +19,7 @@ inputs:
   create_comment:
     required: false
     description: 'should the action comment on the pr'
+    default: 'false'
   check_title:
     required: false
     description: 'shall the title be checked?'
