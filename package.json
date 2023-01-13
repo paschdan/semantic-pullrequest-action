@@ -28,7 +28,7 @@
     "@actions/github": "^5.1.1",
     "@commitlint/config-conventional": "^17.4.2",
     "@commitlint/format": "^17.4.0",
-    "@commitlint/lint": "^17.4.0",
+    "@commitlint/lint": "^17.4.2",
     "@commitlint/load": "^17.4.1"
   },
   "devDependencies": {
